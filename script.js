@@ -18,6 +18,7 @@ addBtn.addEventListener("click", () => {
     input.style.borderBottom = "3px solid red";
   }
   input.value = "";
+  input.focus();
 });
 
 const displayTasks = () => {
