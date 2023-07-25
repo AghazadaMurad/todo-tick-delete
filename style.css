@@ -22,7 +22,7 @@ body {
   );
   width: 400px;
   border-radius: 15px;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   /* justify-content: center; */
   align-items: center;
