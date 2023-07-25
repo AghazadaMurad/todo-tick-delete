@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  background: linear-gradient(
+    68.8deg,
+    rgba(0, 0, 0, 0.95) 1.8%,
+    rgb(0, 55, 79) 31.8%,
+    rgb(9, 93, 134) 56.2%,
+    rgb(15, 155, 217) 89%
+  );
+  width: 400px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+.input-div {
+  display: flex;
+  margin-bottom: 20px;
+  /* background-color: #fff; */
+  position: relative;
+}
+.input-div input {
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  padding: 5px;
+  height: 30px;
+  width: 300px;
+  outline: none;
+}
+
+.addbtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  padding: 5px;
+  width: 300px;
+}
+
+.task-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.task-btns button {
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+.aprovebtn:hover {
+  color: green;
+}
+.deletebtn:hover {
+  color: red;
+}
+
+.green {
+  color: green;
+}
