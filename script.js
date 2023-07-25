@@ -32,30 +32,28 @@ const displayTasks = () => {
       <button class="deletebtn"><i class="fa-solid fa-x"></i></button>
     </div>
   </li>`;
-    const parg = document.querySelectorAll(".task p");
-    // console.log(parg);
-
-    // taskHtml.push(html);
-
     allTasks.innerHTML += html;
 
+    const parg = document.querySelectorAll(".task p");
     const tick = document.querySelectorAll(".aprovebtn");
     const remove = document.querySelectorAll(".deletebtn");
     const todos = document.querySelectorAll(".task");
 
-    const tickTask = (index) => {
-      parg[index].classList.add("green");
-      // parg[index].style.textDecoration = "line-through";
-      displayTasks();
-      console.log(parg[index]);
-    };
-
     tick.forEach((appr, index) => {
       appr.addEventListener("click", () => {
         tickTask(index);
-        console.log(index);
+        // console.log(index);
       });
     });
+
+    const tickTask = (index) => {
+      parg[index].style.textDecoration = "line-through";
+      parg[index].style.color = "green";
+      todos[index].style.borderBottom = "3px solid green";
+
+      // displayTasks();
+      // console.log(parg[index]);
+    };
 
     remove.forEach((del, index) => {
       del.addEventListener("click", () => {
